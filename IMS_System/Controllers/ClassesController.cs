@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IMS_System.Models.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace IMS_System.Controllers
 {
+    [Authorize]
     public class ClassesController : Controller
     {
         private readonly ImsSystemContext _context;
@@ -18,14 +20,14 @@ namespace IMS_System.Controllers
             _context = context;
         }
 
-        // GET: Classes
+        
         public async Task<IActionResult> Index()
         {
             var imsSystemContext = _context.Classes.Include(x => x.Semeter).Include(x => x.Status);
             return View(await imsSystemContext.ToListAsync());
         }
 
-        // GET: Classes/Details/5
+        
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Classes == null)
@@ -45,7 +47,7 @@ namespace IMS_System.Controllers
             return View(@class);
         }
 
-        // GET: Classes/Create
+        
         public IActionResult Create()
         {
             var status = _context.Statuses.Where(x => x.StatusId.ToString().Equals("1") || x.StatusId.ToString().Equals("2"));
@@ -54,9 +56,7 @@ namespace IMS_System.Controllers
             return View();
         }
 
-        // POST: Classes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ClassId,Title,ClassName,Description,StartDate,EndDate,StatusId,SemeterId")] Class @class)
@@ -72,7 +72,7 @@ namespace IMS_System.Controllers
             return View(@class);
         }
 
-        // GET: Classes/Edit/5
+       
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Classes == null)
@@ -90,9 +90,7 @@ namespace IMS_System.Controllers
             return View(@class);
         }
 
-        // POST: Classes/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ClassId,Title,Description,StartDate,EndDate,ClassName,StatusId,SemeterId")] Class @class)
@@ -127,7 +125,7 @@ namespace IMS_System.Controllers
             return View(@class);
         }
 
-        // GET: Classes/Delete/5
+        
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Classes == null)
@@ -147,7 +145,7 @@ namespace IMS_System.Controllers
             return View(@class);
         }
 
-        // POST: Classes/Delete/5
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

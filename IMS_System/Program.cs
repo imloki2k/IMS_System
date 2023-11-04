@@ -1,8 +1,7 @@
-using AspNetCoreHero.ToastNotification;
-using AspNetCoreHero.ToastNotification.Extensions;
 using IMS_System.Models.Entities;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using NToastNotify;
 using System.Configuration;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
@@ -21,8 +20,14 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
                     p.LoginPath = "/Login.html";
                     p.AccessDeniedPath = "/";
                 });
-builder.Services.AddNotyf(config => { config.DurationInSeconds = 3; config.IsDismissable = true; config.Position = NotyfPosition.TopRight; });
 builder.Services.AddAuthorization();
+builder.Services.AddSession();
+builder.Services.AddMvc().AddNToastNotifyToastr(new ToastrOptions()
+{
+	ProgressBar = false,
+	PositionClass = ToastPositions.TopCenter
+});
+
 var app = builder.Build();
 
 
@@ -39,9 +44,8 @@ app.UseRouting();
 app.UseAuthentication();
 
 app.UseAuthorization();
-app.UseNotyf();
-
-
+app.UseSession();
+app.UseNToastNotify();
 
 app.MapControllerRoute(
     name: "default",

@@ -1,16 +1,624 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Admin\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\noty.js",
+      "PackagePath": "staticwebassets\\noty.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\toastr.js",
+      "PackagePath": "staticwebassets\\toastr.js"
+    },
+    {
       "Id": "E:\\Code NET\\IMS_System\\IMS_System\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\IMS_System.bundle.scp.css",
       "PackagePath": "staticwebassets\\IMS_System.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\css\\default-css.css",
+      "PackagePath": "staticwebassets\\assets\\css\\default-css.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\css\\metisMenu.css",
+      "PackagePath": "staticwebassets\\assets\\css\\metisMenu.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\assets\\css\\responsive.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slicknav.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\css\\styles.css",
+      "PackagePath": "staticwebassets\\assets\\css\\styles.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\themify-icons.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\css\\typography.css",
+      "PackagePath": "staticwebassets\\assets\\css\\typography.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.eot"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.svg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.woff"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\author\\author-img1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\author\\author-img1.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\author\\author-img2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\author\\author-img2.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\author\\author-img3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\author\\author-img3.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\author\\author-img4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\author\\author-img4.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\author\\avatar.png",
+      "PackagePath": "staticwebassets\\assets\\images\\author\\avatar.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\bg\\singin-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\singin-bg.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\blog\\post-thumb1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\post-thumb1.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\blog\\post-thumb2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\post-thumb2.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\card\\card-img1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\card\\card-img1.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\card\\card-img10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\card\\card-img10.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\card\\card-img2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\card\\card-img2.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\card\\card-img3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\card\\card-img3.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\card\\card-img4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\card\\card-img4.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\card\\card-img5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\card\\card-img5.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\card\\card-img6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\card\\card-img6.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\card\\card-img7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\card\\card-img7.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\card\\card-img8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\card\\card-img8.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\card\\card-img9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\card\\card-img9.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\Thumbs.db"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\loader.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\loader.gif"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\logo.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\logo2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\logo2.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\market-value\\Thumbs.db",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\market-value\\Thumbs.db"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\market-value\\icon1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\market-value\\icon1.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\market-value\\icon2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\market-value\\icon2.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\market-value\\icon3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\market-value\\icon3.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\market-value\\icon4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\market-value\\icon4.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\market-value\\trends-down-icon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\market-value\\trends-down-icon.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\market-value\\trends-up-icon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\market-value\\trends-up-icon.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\market-value\\triangle-down.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\market-value\\triangle-down.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\market-value\\triangle-up.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icon\\market-value\\triangle-up.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\media\\media1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\media\\media1.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\media\\media2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\media\\media2.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\team\\team-author1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\team-author1.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\team\\team-author2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\team-author2.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\team\\team-author3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\team-author3.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\team\\team-author4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\team-author4.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\team\\team-author5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\team-author5.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\bar-chart.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bar-chart.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\jquery.slicknav.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.slicknav.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\jquery.slimscroll.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.slimscroll.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\line-chart.js",
+      "PackagePath": "staticwebassets\\assets\\js\\line-chart.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\maps.js",
+      "PackagePath": "staticwebassets\\assets\\js\\maps.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\metisMenu.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\metisMenu.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\pie-chart.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pie-chart.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\scripts.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\vendor\\jquery-2.2.4.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-2.2.4.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\js\\vendor\\modernizr-2.8.3.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\modernizr-2.8.3.min.js"
     },
     {
       "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\css\\util.css",
+      "PackagePath": "staticwebassets\\css\\util.css"
+    },
+    {
       "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\iconic\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\iconic\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\fonts\\poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\bg-01.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-01.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\Thumbs.db",
+      "PackagePath": "staticwebassets\\images\\icon\\Thumbs.db"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\loader.gif",
+      "PackagePath": "staticwebassets\\images\\icon\\loader.gif"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\logo.png",
+      "PackagePath": "staticwebassets\\images\\icon\\logo.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\logo2.png",
+      "PackagePath": "staticwebassets\\images\\icon\\logo2.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\market-value\\Thumbs.db",
+      "PackagePath": "staticwebassets\\images\\icon\\market-value\\Thumbs.db"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\market-value\\icon1.png",
+      "PackagePath": "staticwebassets\\images\\icon\\market-value\\icon1.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\market-value\\icon2.png",
+      "PackagePath": "staticwebassets\\images\\icon\\market-value\\icon2.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\market-value\\icon3.png",
+      "PackagePath": "staticwebassets\\images\\icon\\market-value\\icon3.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\market-value\\icon4.png",
+      "PackagePath": "staticwebassets\\images\\icon\\market-value\\icon4.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\market-value\\trends-down-icon.png",
+      "PackagePath": "staticwebassets\\images\\icon\\market-value\\trends-down-icon.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\market-value\\trends-up-icon.png",
+      "PackagePath": "staticwebassets\\images\\icon\\market-value\\trends-up-icon.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\market-value\\triangle-down.png",
+      "PackagePath": "staticwebassets\\images\\icon\\market-value\\triangle-down.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\images\\icon\\market-value\\triangle-up.png",
+      "PackagePath": "staticwebassets\\images\\icon\\market-value\\triangle-up.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
       "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\js\\site.js",
@@ -243,6 +851,150 @@
     {
       "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\vendor\\animate\\animate.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\animsition\\css\\animsition.css",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\css\\animsition.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\animsition\\css\\animsition.min.css",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\css\\animsition.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\animsition\\js\\animsition.js",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\js\\animsition.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\animsition\\js\\animsition.min.js",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\js\\animsition.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\js\\popper.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\bootstrap\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\tooltip.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\countdowntime\\countdowntime.js",
+      "PackagePath": "staticwebassets\\vendor\\countdowntime\\countdowntime.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\css-hamburgers\\hamburgers.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\css-hamburgers\\hamburgers.min.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\daterangepicker\\moment.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\moment.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\daterangepicker\\moment.min.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\moment.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\jquery\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\vendor\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\select2\\select2.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\vendor\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.IMS_System.Microsoft.AspNetCore.StaticWebAssets.props",
