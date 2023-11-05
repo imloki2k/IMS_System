@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Dw1kezqxW1VKp2AYz+Hwb9ye8CuhIncrKthFpnNoni8=",
+  "Hash": "A3szNbrj1RSAYDFfNzln3SR9PE5F1yTLEVhB4KzfkZ8=",
   "Source": "IMS_System",
   "BasePath": "_content/IMS_System",
   "Mode": "Default",
@@ -782,12 +782,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\icon\\loader.gif"
     },
     {
-      "Identity": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\logo.png",
+      "Identity": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\logo1.png",
       "SourceId": "IMS_System",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\",
       "BasePath": "_content/IMS_System",
-      "RelativePath": "assets/images/icon/logo.png",
+      "RelativePath": "assets/images/icon/logo1.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -796,7 +796,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\icon\\logo.png"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\icon\\logo1.png"
     },
     {
       "Identity": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\assets\\images\\icon\\logo2.png",

@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IMS_System.Models.Entities;
 using Microsoft.AspNetCore.Authorization;
+using IMS_System.Extentions;
+using NToastNotify;
 
 namespace IMS_System.Controllers
 {
@@ -14,10 +16,11 @@ namespace IMS_System.Controllers
     public class ClassesController : Controller
     {
         private readonly ImsSystemContext _context;
-
-        public ClassesController(ImsSystemContext context)
+        private readonly IToastNotification _toastNotification;
+        public ClassesController(ImsSystemContext context, IToastNotification toastNotification)
         {
             _context = context;
+            _toastNotification = toastNotification;
         }
 
         
@@ -65,7 +68,12 @@ namespace IMS_System.Controllers
             {
                 _context.Add(@class);
                 await _context.SaveChangesAsync();
+                _toastNotification.AddSuccessToastMessage("Create successful!");
                 return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                _toastNotification.AddErrorToastMessage("Create failed!");
             }
             ViewData["SemeterId"] = new SelectList(_context.Semeters, "SemeterId", "SemeterName", @class.SemeterId);
             ViewData["StatusId"] = new SelectList(_context.Statuses.Where(x => x.StatusId.ToString().Equals("1") || x.StatusId.ToString().Equals("2")), "StatusId", "StatusName", @class.StatusId);
@@ -106,11 +114,13 @@ namespace IMS_System.Controllers
                 {
                     _context.Update(@class);
                     await _context.SaveChangesAsync();
+                    _toastNotification.AddSuccessToastMessage("Update successful!");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!ClassExists(@class.ClassId))
                     {
+                        _toastNotification.AddErrorToastMessage("Update failed!");
                         return NotFound();
                     }
                     else
@@ -125,7 +135,36 @@ namespace IMS_System.Controllers
             return View(@class);
         }
 
-        
+        public async Task<IActionResult> Cancel(int? id)
+        {
+            if (id == null || _context.Classes == null)
+            {
+                return NotFound();
+            }
+
+            var @class = await _context.Classes.FindAsync(id);
+            try
+            {
+                @class.StatusId = 2;
+                _context.Update(@class);
+                await _context.SaveChangesAsync();
+                _toastNotification.AddSuccessToastMessage("Cancel started class successful!");
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ClassExists(@class.ClassId))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Classes == null)
@@ -158,6 +197,7 @@ namespace IMS_System.Controllers
             if (@class != null)
             {
                 _context.Classes.Remove(@class);
+                _toastNotification.AddSuccessToastMessage("Delete successful!");
             }
             
             await _context.SaveChangesAsync();

@@ -4,12 +4,13 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="row">
 <div class="col-12 mt-5">
     <div class="card">
         <div class="card-body">
             <h4 class="header-title">Class Management</h4>
-            <div class="col-sm-7">
-                <a asp-action="Create" class="btn btn-secondary"><i class="material-icons">&#xE147;</i> <span>Add New Class</span></a>
+            <div class="col-sm-12" style="text-align: right; margin: 10px">
+                <a asp-action="Create" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Add New Class</span></a>
                 <a href="#" class="btn btn-secondary"><i class="material-icons">&#xE24D;</i> <span>Export to Excel</span></a>
                 <a href="#" class="btn btn-secondary"><i class="material-icons">&#xE24D;</i> <span>Import from Excel</span></a>
             </div>
@@ -54,8 +55,11 @@
                                     @Html.DisplayFor(modelItem => item.Status.StatusName)
                                 </td>
                                 <td>
-                                    <a asp-action="Edit" asp-route-id="@item.ClassId" class="settings" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
-                                    <a asp-action="Delete" asp-route-id="@item.ClassId" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
+                                    <a asp-action="Edit" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-danger mb-3">Edit</a>
+                                    <a asp-action="Delete" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-primary mb-3">Delete</a>
+                                    @if(@item.Status.StatusName.Equals("Started")){
+                                        <a asp-action="Cancel" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-warning mb-3">Cancel started class</a>
+                                    }
                                 </td>
                             </tr>
                         }
@@ -64,4 +68,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
