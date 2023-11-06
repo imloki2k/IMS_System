@@ -5,7 +5,7 @@ namespace IMS_System.Extentions
 {
     public static class EncodingSHA256
     {
-        public static string GetSHA256(this string str)
+        public static string GetSHA256(string str)
         {
 			using (SHA256 sha256 = SHA256.Create())
 			{

@@ -301,6 +301,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\vendor\\modernizr-2.8.3.min.js"
     },
     {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
       "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

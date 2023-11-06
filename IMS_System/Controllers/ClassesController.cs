@@ -196,8 +196,15 @@ namespace IMS_System.Controllers
             var @class = await _context.Classes.FindAsync(id);
             if (@class != null)
             {
-                _context.Classes.Remove(@class);
-                _toastNotification.AddSuccessToastMessage("Delete successful!");
+                if(@class.StatusId == 1) {
+                    _toastNotification.AddWarningToastMessage("Started class can't delete!");
+                    RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    _context.Classes.Remove(@class);
+                    _toastNotification.AddSuccessToastMessage("Delete successful!");
+                }
             }
             
             await _context.SaveChangesAsync();

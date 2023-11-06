@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using NToastNotify;
 using System.Drawing.Drawing2D;
@@ -228,26 +229,54 @@ namespace IMS_System.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-
-        [Route("Dashboard.html", Name = "DashBoard")]
-        public IActionResult DashBoard()
+        public async Task<IActionResult> DashBoard()
         {
 
             var tkID = HttpContext.Session.GetString("UserId");
             if (tkID != null)
             {
-                var customer = _context.Users.AsNoTracking().SingleOrDefault(x => x.UserId == Convert.ToInt32(tkID));
-                if (customer != null)
+                var user = _context.Users.AsNoTracking().SingleOrDefault(x => x.UserId == Convert.ToInt32(tkID));
+                if (user != null)
                 {
-                    return View(customer);
+                    ViewData["RoleId"] = new SelectList(_context.Roles.ToList(), "RoleId", "RoleName", user.RoleId);
+                    return View(user);
                 }
                 return RedirectToAction("Login", "Accounts");
             }
-
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DashBoard(int id, [Bind("UserId,Name,Email,Mobile,Avatar,RoleId,Password")] User @user)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(@user);
+                    await _context.SaveChangesAsync();
+                    _toastNotification.AddSuccessToastMessage("Update successful!");
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                        _toastNotification.AddErrorToastMessage("Update failed!");
+                        return NotFound();
+                }
+                return RedirectToAction("Dashboard", "Accounts");
+            }
+            ViewData["RoleId"] = new SelectList(_context.Roles.ToList(), "RoleId", "RoleName", @user.RoleId);
+            return View(@user);
+        }
 
+        [HttpGet]
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult ChangePassword(string OldPassword, string NewPassword, string ConfirmPassword)
         {
             var uID = HttpContext.Session.GetString("UserId");
@@ -280,6 +309,13 @@ namespace IMS_System.Controllers
                 RedirectToAction("Dashboard", "Accounts");
             }
             return RedirectToAction("Dashboard", "Accounts");
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult ForgotPassword()
+        {
+            return View();
         }
     }
 }

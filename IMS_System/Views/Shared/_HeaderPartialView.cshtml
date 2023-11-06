@@ -16,11 +16,11 @@
         <div class="col-md-6 col-sm-4 clearfix">
             <div class="user-profile pull-right">
                 <img class="avatar user-thumb" src="~/assets/images/author/avatar.png" alt="avatar">
-                <h4 class="user-name dropdown-toggle" data-toggle="dropdown">@User.Identity.Name<i class="fa fa-angle-down"></i></h4>
-                <div class="dropdown-menu">
+                <h4 class="user-name dropdown-toggle" data-toggle="dropdown"><a asp-controller="Accounts" asp-action="Dashboard"></a>@User.Identity.Name</h4>
+                @* <div class="dropdown-menu">
                     <a class="dropdown-item" href="/Logout.html">Settings</a>
                     <a asp-controller="Accounts" asp-action="Logout" class="dropdown-item">Log Out</a>
-                </div>
+                </div> *@ 
             </div>
         </div>
     </div>

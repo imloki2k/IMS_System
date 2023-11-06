@@ -58,7 +58,7 @@
                                     <a asp-action="Edit" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-danger mb-3">Edit</a>
                                     <a asp-action="Delete" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-primary mb-3">Delete</a>
                                     @if(@item.Status.StatusName.Equals("Started")){
-                                        <a asp-action="Cancel" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-warning mb-3">Cancel started class</a>
+                                        <a asp-action="Cancel" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-warning mb-3">Cancel class</a>
                                     }
                                 </td>
                             </tr>
