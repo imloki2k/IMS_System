@@ -1,0 +1,59 @@
+﻿@model IMS_System.Models.Entities.Milestone
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Milestone</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MilestoneId" />
+            <div class="form-group">
+                <label asp-for="Class" class="control-label"></label>
+                <select asp-for="ClassId" class="form-control" asp-items="ViewBag.ClassId"></select>
+                <span asp-validation-for="ClassId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Project" class="control-label"></label>
+                <select asp-for="ProjectId" class="form-control" asp-items="ViewBag.ProjectId"></select>
+                <span asp-validation-for="ProjectId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Issue" class="control-label"></label>
+                <select asp-for="IssueId" class="form-control" asp-items="ViewBag.IssueId"></select>
+                <span asp-validation-for="IssueId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Assignment" class="control-label"></label>
+                <select asp-for="AssignmentId" class="form-control" asp-items="ViewBag.AssignmentId"></select>
+                <span asp-validation-for="AssignmentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <select asp-for="SubjectId" class="form-control" asp-items="ViewBag.SubjectId"></select>
+                <span asp-validation-for="SubjectId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Milestone1" class="control-label">Date Time</label>
+                <input asp-for="Milestone1" class="form-control" />
+                <span asp-validation-for="Milestone1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MilestoneDescription" class="control-label"></label>
+                <input asp-for="MilestoneDescription" class="form-control" />
+                <span asp-validation-for="MilestoneDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" /> |
+                <a asp-controller="Classes" asp-action="Details" asp-route-id="@Model?.Class.ClassId" class="btn btn-secondary">Back to Class Details</a>
+            </div>
+        </form>
+    </div>
+</div>
+

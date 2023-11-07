@@ -8,10 +8,10 @@
 <hr />
 <div class="row">
     <!-- tab start -->
-    <div class="col-lg-12 mt-5">
+    <div class="col-12 mt-5">
         <div class="card">
             <div class="card-body">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills col-12" id="pills-tab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">General</a>
                     </li>
@@ -75,123 +75,102 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="row">
-                            <div class="col-12 mt-5">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="data-tables datatable-dark">
-                                            <table id="dataTable3" class="text-center">
-                                                <thead class="text-capitalize">
-                                                    <tr>
-                                                        <th>Student Name</th>
-                                                        <th>Email</th>
-                                                        <th>Mobile</th>
-                                                        <th></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    @foreach (var item in @Model.Student)
-                                                    {
-                                                        <tr>
-                                                            @* <td>
-                                                        @Html.DisplayFor(modelItem => item.ClassId)
-                                                        </td> *@
-                                                            <td>
-                                                                <a asp-action="Details" asp-route-id="@item.StudentId">
-                                                                    @Html.DisplayFor(modelItem => item.Student.Name)
-                                                                </a>
-                                                            </td>
-                                                            <td>
-                                                                @Html.DisplayFor(modelItem => item.Student.Email)
-                                                            </td>
-                                                            <td>
-                                                                @Html.DisplayFor(modelItem => item.Student.Mobile)
-                                                            </td>
-                                                            <td>
-                                                                @* <a asp-action="Edit" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-danger mb-3">Edit</a>
-                                                            <a asp-action="Delete" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-primary mb-3">Delete</a>
-                                                            @if (@item.Status.StatusName.Equals("Started"))
-                                                            {
-                                                            <a asp-action="Cancel" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-warning mb-3">Cancel class</a>
-                                                            } *@
-                                                            </td>
-                                                        </tr>
-                                                    }
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="data-tables datatable-dark">
+                            <table id="dataTable3" class="text-center">
+                                <thead class="text-capitalize">
+                                    <tr>
+                                        <th>Student Name</th>
+                                        <th>Email</th>
+                                        <th>Mobile</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in @Model.Student)
+                                    {
+                                        <tr>
+                                            @* <td>
+                                        @Html.DisplayFor(modelItem => item.ClassId)
+                                        </td> *@
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Student.Name)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Student.Email)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Student.Mobile)
+                                            </td>
+                                            <td>
+                                                @* <a asp-action="Edit" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-danger mb-3">Edit</a>
+                                                <a asp-action="Delete" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-primary mb-3">Delete</a> *@
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                            <div class="row">
-                                <div class="col-12 mt-5">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="data-tables">
-                                                <table id="dataTable" class="text-center">
-                                                    <thead class="bg-light text-capitalize">
-                                                        <tr>
-                                                            <th>Milestone</th>
-                                                            <th>Date Time</th>
-                                                            <th>Subject</th>
-                                                            <th>Assingment</th>
-                                                            <th>Project</th>
-                                                            <th>Issue</th>
-                                                            <th></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        @foreach (var item in Model.Milestone)
-                                                        {
-                                                            <tr>
-                                                                @* <td>
-                                                            @Html.DisplayFor(modelItem => item.ClassId)
-                                                            </td> *@
-                                                                <td>
-                                                                    <a asp-action="Details" asp-route-id="@item.MilestoneId">
-                                                                        @Html.DisplayFor(modelItem => item.MilestoneDescription)
-                                                                    </a>
-                                                                </td>
-                                                                <td>
-                                                                    @Html.DisplayFor(modelItem => item.Milestone1)
-                                                                </td>
-                                                                <td>
-                                                                    @Html.DisplayFor(modelItem => item.Subject.SubjectName)
-                                                                    @Html.DisplayFor(modelItem => item.Subject.SubjectCode)
-                                                                </td>
-                                                                <td>
-                                                                    @Html.DisplayFor(modelItem => item.Assignment.AssingmentName)
-                                                                </td>
-                                                                <td>
-                                                                    @Html.DisplayFor(modelItem => item.Project.VietnameseName)
-                                                                </td>
-                                                                <td>
-                                                                    @Html.DisplayFor(modelItem => item.Issue.IssueName)
-                                                                </td>
-                                                                <td>
-                                                                    @* <a asp-action="Edit" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-danger mb-3">Edit</a>
-                                                                <a asp-action="Delete" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-primary mb-3">Delete</a>
-                                                                @if (@item.Status.StatusName.Equals("Started"))
-                                                                {
-                                                                <a asp-action="Cancel" asp-route-id="@item.ClassId" type="button" class="btn btn-rounded btn-warning mb-3">Cancel class</a>
-                                                                } *@
-                                                                </td>
-                                                            </tr>
-                                                        }
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab">
-                            </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="col-sm-12" style="text-align: right; margin: 10px">
+                            <a asp-controller="Milestones" asp-action="Create" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Add New Milestone</span></a>
                         </div>
+                        <div class="data-tables">
+                            <table id="dataTable" class="text-center">
+                                <thead class="text-capitalize">
+                                    <tr>
+                                        <th>Milestone</th>
+                                        <th>Date Time</th>
+                                        <th>Subject</th>
+                                        <th>Assingment</th>
+                                        <th>Project</th>
+                                        <th>Issue</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.Milestone)
+                                    {
+                                        <tr>
+                                            @* <td>
+                                        @Html.DisplayFor(modelItem => item.ClassId)
+                                        </td> *@
+                                            <td>
+                                                <a asp-controller="Milestones" asp-action="Details" asp-route-id="@item.MilestoneId">
+                                                    @Html.DisplayFor(modelItem => item.MilestoneDescription)
+                                                </a>
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Milestone1)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Subject.SubjectName)
+                                                @Html.DisplayFor(modelItem => item.Subject.SubjectCode)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Assignment.AssingmentName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Project.VietnameseName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Issue.IssueName)
+                                            </td>
+                                            <td>
+                                                <a asp-controller="Milestones" asp-action="Edit" asp-route-id="@item.MilestoneId">Edit</a>
+                                                <a asp-controller="Milestones"  asp-action="Delete" asp-route-id="@item.MilestoneId">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab">
                     </div>
                 </div>
             </div>
-            <!-- tab end -->
         </div>
+    </div>
+    <!-- tab end -->
+</div>

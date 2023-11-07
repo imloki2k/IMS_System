@@ -60,6 +60,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3Nlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Code NET/IMS_System/IMS_System/Views/ClassStudents/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3NTdHVkZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Code NET/IMS_System/IMS_System/Views/ClassStudents/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3NTdHVkZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Code NET/IMS_System/IMS_System/Views/ClassStudents/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3NTdHVkZW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Code NET/IMS_System/IMS_System/Views/ClassStudents/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3NTdHVkZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Code NET/IMS_System/IMS_System/Views/ClassStudents/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3NTdHVkZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Code NET/IMS_System/IMS_System/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,6 +90,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Code NET/IMS_System/IMS_System/Views/LandingPage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Code NET/IMS_System/IMS_System/Views/Milestones/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlsZXN0b25lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Code NET/IMS_System/IMS_System/Views/Milestones/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlsZXN0b25lc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Code NET/IMS_System/IMS_System/Views/Milestones/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlsZXN0b25lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Code NET/IMS_System/IMS_System/Views/Milestones/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlsZXN0b25lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Code NET/IMS_System/IMS_System/Views/Milestones/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlsZXN0b25lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Code NET/IMS_System/IMS_System/Views/Shared/AdminLayout.cshtml]

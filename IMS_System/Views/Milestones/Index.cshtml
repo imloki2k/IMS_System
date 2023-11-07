@@ -1,0 +1,72 @@
+﻿@model IEnumerable<IMS_System.Models.Entities.Milestone>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Milestone List</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-info">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MilestoneDescription)
+            <th>
+                    Date Time
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Subject)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Assignment)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Class)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Issue)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Project)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MilestoneDescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Milestone1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Subject.SubjectName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Assignment.AssingmentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Class.ClassName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Issue.IssueName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Project.EnglishName)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.MilestoneId" class="btn btn-primary">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.MilestoneId" class="btn btn-info">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.MilestoneId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
