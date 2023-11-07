@@ -40,8 +40,15 @@ public partial class ImsSystemContext : DbContext
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-R36K6QN;Initial Catalog=IMS_System;User ID=sa;Password=123456;TrustServerCertificate=true;");
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+            optionsBuilder.UseSqlServer(config.GetConnectionString("dbIMSsystem"));
+        }
+    }
+        
+        //=> optionsBuilder.UseSqlServer("Data Source=DESKTOP-R36K6QN;Initial Catalog=IMS_System;User ID=sa;Password=123456;TrustServerCertificate=true;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -146,6 +153,7 @@ public partial class ImsSystemContext : DbContext
                 .HasColumnType("text")
                 .HasColumnName("milestone_description");
             entity.Property(e => e.ProjectId).HasColumnName("project_id");
+            entity.Property(e => e.SubjectId).HasColumnName("subject_id");
 
             entity.HasOne(d => d.Assignment).WithMany(p => p.Milestones)
                 .HasForeignKey(d => d.AssignmentId)
@@ -162,6 +170,10 @@ public partial class ImsSystemContext : DbContext
             entity.HasOne(d => d.Project).WithMany(p => p.Milestones)
                 .HasForeignKey(d => d.ProjectId)
                 .HasConstraintName("FK_Milestones_Projects");
+
+            entity.HasOne(d => d.Subject).WithMany(p => p.Milestones)
+                .HasForeignKey(d => d.SubjectId)
+                .HasConstraintName("FK_Milestones_Subjects");
         });
 
         modelBuilder.Entity<Project>(entity =>

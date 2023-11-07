@@ -1,0 +1,77 @@
+﻿@model IMS_System.ModelViews.RegisterModelView
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+<div class="limiter">
+    <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+            <form class="login100-form validate-form" asp-controller="Accounts" asp-action="Register">
+                <span class="login100-form-title p-b-49">
+                    Register
+                </span>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="wrap-input100 validate-input m-b-23" data-validate="Name is reauired">
+                    <span class="label-input100">Name</span>
+                    <input type="text" asp-for="FullName" class="input100" type="text" placeholder="Type your name">
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Email is required">
+                    <span class="label-input100">Email</span>
+                    <input type="email" asp-for="Email" class="input100" placeholder="Type your email">
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <span class="label-input100">Mobile Phone</span>
+                    <input type="text" asp-for="PhoneNumber" class="input100" placeholder="Type your mobile phone">
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <span class="label-input100">Password</span>
+                    <input type="password" asp-for="Password" class="input100" placeholder="Type your password">
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password conform is required">
+                    <span class="label-input100">Password Conform</span>
+                    <input type="password" asp-for="ConfirmPassword" class="input100" placeholder="Type your password conform">
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+
+                <div class="text-right p-t-8 p-b-31">
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button type="submit" name="register-submit" id="register-submit" class="login100-form-btn">Register</button>
+                    </div>
+                </div>
+@* 
+                <div class="txt1 text-center p-t-54 p-b-20">
+                    <span>
+                        Or Sign Up Using
+                    </span>
+                </div> *@
+                <div class="flex-col-c p-t-155">
+                    <a asp-controller="Accounts" asp-action="Login">
+                        Back to Login
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div id="dropDownSelect1"></div>
+
