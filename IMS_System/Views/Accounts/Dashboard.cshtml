@@ -1,0 +1,46 @@
+﻿@model IMS_System.Models.Entities.User
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Dashboard</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="DashBoard" asp-asp-controller="Accounts">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UserId" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Role" class="control-label"></label>
+                <select asp-for="RoleId" class="form-control" asp-items="ViewBag.RoleId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Mobile" class="control-label"></label>
+                <input asp-for="Mobile" class="form-control" />
+            </div>
+            <div class="form-group" style="display:none;">
+                <label asp-for="Avatar" class="control-label"></label>
+                <input asp-for="Avatar" class="form-control" />
+            </div>
+            <div class="form-group" style="display:none;">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+            </div>
+            <div class="form-group" style="margin-top: 20px">
+                <input type="submit" value="Edit" class="btn btn-primary"/> | 
+                <a asp-controller="Accounts" asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+            <div class="form-group" style="margin-top: 20px">
+                <a asp-controller="Accounts" asp-action="ChangePassword" class="btn btn-info">Change password</a>
+            </div>
+        </form>
+    </div>
+</div>

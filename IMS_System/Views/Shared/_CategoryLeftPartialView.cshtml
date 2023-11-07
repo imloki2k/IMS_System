@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="sidebar-menu">
+    <div class="sidebar-header">
+        <div class="logo">
+            <a asp-controller="Home" asp-action="Index"><img style="height:30%;width:30%;" src="~/assets/images/icon/logo1.png" alt="logo"></a>
+        </div>
+    </div>
+    <div class="main-menu">
+        <div class="menu-inner">
+            <nav>
+                <ul class="metismenu" id="menu">
+                    <li>
+                        <a href="javascript:void(0)" aria-expanded="true"><i class="ti-user"></i><span>Dashboard</span></a>
+                        <ul class="collapse">
+                            <li><a asp-controller="Accounts" asp-action="Dashboard">Profile</a></li>
+                        </ul>
+                    </li>
+                    @if (User.IsInRole("MANAGER"))
+                    {
+                        <li>
+                            <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>Manager</span></a>
+                            <ul class="collapse">
+                                <li><a asp-controller="Classes" asp-action="Index">Classes</a></li>
+                                <li><a href="index2.html">Subject</a></li>
+                            </ul>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
