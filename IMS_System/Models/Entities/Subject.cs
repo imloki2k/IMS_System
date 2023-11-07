@@ -18,6 +18,7 @@ public partial class Subject
     public int? ClassId { get; set; }
 
     public virtual ICollection<Assignment> Assignments { get; set; } = new List<Assignment>();
+    public virtual ICollection<Milestone> Milestones { get; set; } = new List<Milestone>();
 
     public virtual Class? Class { get; set; }
 }

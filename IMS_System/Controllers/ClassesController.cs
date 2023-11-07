@@ -9,6 +9,7 @@ using IMS_System.Models.Entities;
 using Microsoft.AspNetCore.Authorization;
 using IMS_System.Extentions;
 using NToastNotify;
+using IMS_System.ModelViews;
 
 namespace IMS_System.Controllers
 {
@@ -42,12 +43,29 @@ namespace IMS_System.Controllers
                 .Include(x => x.Semeter)
                 .Include(x => x.Status)
                 .FirstOrDefaultAsync(m => m.ClassId == id);
+            var @student = await _context.ClassStudents
+                .Include(x => x.Student)
+                .Include(x => x.Class)
+                .Where(m => m.ClassId == id).ToListAsync();
+            var @milestone = await _context.Milestones
+                .Include(x => x.Class)
+                .Include(x => x.Subject)
+                .Include(x => x.Assignment)
+                .Include(x => x.Project)
+                .Include(x => x.Issue)
+                .Where(m => m.ClassId == id)
+                .ToListAsync();
             if (@class == null)
             {
                 return NotFound();
             }
-
-            return View(@class);
+            var viewModel = new ClassDetailsViewModel
+            {
+                Class = @class,
+                Student = (IEnumerable<ClassStudent>)@student,
+                Milestone = (IEnumerable<Milestone>)@milestone
+            };
+            return View(viewModel);
         }
 
         

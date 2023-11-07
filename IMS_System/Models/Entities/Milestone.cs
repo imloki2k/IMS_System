@@ -14,6 +14,7 @@ public partial class Milestone
     public int? IssueId { get; set; }
 
     public int? AssignmentId { get; set; }
+    public int? SubjectId { get; set; }
 
     public DateTime? Milestone1 { get; set; }
 
@@ -26,4 +27,6 @@ public partial class Milestone
     public virtual Issue? Issue { get; set; }
 
     public virtual Project? Project { get; set; }
+
+    public virtual Subject? Subject { get; set; }
 }

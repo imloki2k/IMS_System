@@ -153,6 +153,7 @@ public partial class ImsSystemContext : DbContext
                 .HasColumnType("text")
                 .HasColumnName("milestone_description");
             entity.Property(e => e.ProjectId).HasColumnName("project_id");
+            entity.Property(e => e.SubjectId).HasColumnName("subject_id");
 
             entity.HasOne(d => d.Assignment).WithMany(p => p.Milestones)
                 .HasForeignKey(d => d.AssignmentId)
@@ -169,6 +170,10 @@ public partial class ImsSystemContext : DbContext
             entity.HasOne(d => d.Project).WithMany(p => p.Milestones)
                 .HasForeignKey(d => d.ProjectId)
                 .HasConstraintName("FK_Milestones_Projects");
+
+            entity.HasOne(d => d.Subject).WithMany(p => p.Milestones)
+                .HasForeignKey(d => d.SubjectId)
+                .HasConstraintName("FK_Milestones_Subjects");
         });
 
         modelBuilder.Entity<Project>(entity =>
