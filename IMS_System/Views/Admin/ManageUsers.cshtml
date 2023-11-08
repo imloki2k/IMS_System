@@ -1,0 +1,54 @@
+﻿@model IEnumerable<IMS_System.Models.Entities.User>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-12 mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="header-title">User Management</h4>
+            <div class="data-tables datatable-dark">
+                <table id="dataTable3" class="text-center">
+                    <thead class="text-capitalize">
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                @* <td>
+                            @Html.DisplayFor(modelItem => item.ClassId)
+                            </td> *@
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@item.UserId">
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </a>
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Email)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Mobile)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Role!.RoleName)
+                                </td>
+                              
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.UserId" class="settings" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i>Edit</a>
+                                    <a asp-action="Delete" asp-route-id="@item.UserId" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i>Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

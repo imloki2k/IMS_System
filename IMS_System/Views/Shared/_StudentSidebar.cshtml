@@ -1,0 +1,26 @@
+﻿<!-- Sidebar Menu Start -->
+<div class="sidebar-menu">
+    <div class="sidebar-header">
+        <div class="logo">
+            <a href="@Url.Action("Index", "Home")"><img style="height:30%;width:30%;" src="~/assets/images/icon/logo1.png" alt="logo"></a>
+        </div>
+    </div>
+    <div class="main-menu">
+        <div class="menu-inner">
+            <nav>
+                <ul class="metismenu" id="menu">
+                    <!-- Project Management Menu for Students -->
+                    <li>
+                        <a href="javascript:void(0)" aria-expanded="true"><i class="ti-folder"></i><span>Project Management</span></a>
+                        <ul class="collapse">
+                            <li><a href="@Url.Action("Index", "Projects")">My Projects</a></li>
+                            <li><a href="@Url.Action("Create", "Projects")">Create Project</a></li>
+                        </ul>
+                    </li>
+                    <!-- Add other menus as necessary -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Sidebar Menu End -->

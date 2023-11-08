@@ -1,0 +1,42 @@
+﻿@model IMS_System.Models.Entities.Subject
+
+@{
+    ViewData["Title"] = "Edit Subject";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Or your specific layout
+}
+
+<h2>Edit Subject</h2>
+
+@using (Html.BeginForm("EditSubject", "Admin", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    
+    @Html.HiddenFor(model => model.SubjectId)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SubjectName)
+        @Html.TextBoxFor(model => model.SubjectName, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SubjectCode)
+        @Html.TextBoxFor(model => model.SubjectCode, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Description)
+        @Html.EditorFor(model => model.Description, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Class)
+        @Html.DropDownListFor(model => model.ClassId, (SelectList)ViewBag.Classes, "-- Select Class --")
+        @Html.ValidationMessageFor(model => model.ClassId)
+    </div>
+
+    // Additional fields for editing...
+
+    <button type="submit" class="btn btn-primary">Save changes</button>
+}
+
+<a asp-action="ManageSubjects" class="btn btn-default">Cancel</a>

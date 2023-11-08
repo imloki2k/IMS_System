@@ -1,0 +1,58 @@
+﻿@model IEnumerable<IMS_System.Models.Entities.Issue>
+
+@{
+    ViewData["Title"] = "Project Issues";
+    Layout = "~/Views/Shared/StudentLayout.cshtml";
+    var projectId = ViewData["ProjectId"];
+    var milestoneId = ViewData["MilestoneId"];
+}
+
+<h2>Project Issues</h2>
+
+<p>
+    <a asp-action="Create"  asp-route-projectId="@projectId" class="btn btn-primary">Create New Issue</a>
+</p>
+<p>
+    <a asp-action="Export" class="btn btn-primary">Export to Excel</a>
+</p>
+
+<table class="table" id="issuesTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IssueName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status.StatusName)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IssueName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status.StatusName)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IssueId" class="btn btn-info">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.IssueId" class="btn btn-primary">Details</a> |
+                 @*    <a asp-action="Delete" asp-route-id="@item.IssueId" class="btn btn-danger">Delete</a> *@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+}

@@ -22,4 +22,6 @@ public partial class Issue
     public virtual ICollection<Milestone> Milestones { get; set; } = new List<Milestone>();
 
     public virtual Status? Status { get; set; }
+
+    public virtual Project? Project { get; set; }
 }

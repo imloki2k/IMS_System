@@ -1,0 +1,31 @@
+﻿@* Header for Student Users *@
+<div class="header-area">
+    <div class="row align-items-center">
+        <!-- Navigation -->
+        <div class="col-md-6 col-sm-8 clearfix">
+            <nav>
+                <ul class="notification-area pull-left">
+                    <li><a href="@Url.Action("Projects", "Index")">Projects</a></li>
+                    <!-- More links can be added here -->
+                </ul>
+            </nav>
+        </div>
+        <!-- User Info -->
+        <div class="col-md-6 col-sm-4 clearfix">
+            <ul class="notification-area pull-right">
+                <!-- User Profile Info -->
+                <li class="user-profile dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="avatar user-thumb" src="~/assets/images/author/avatar.png" alt="avatar">
+                        <span class="user-name">Student Name</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                        <!-- Dropdown menu links -->
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

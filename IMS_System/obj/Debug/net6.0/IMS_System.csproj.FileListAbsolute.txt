@@ -577,3 +577,11 @@ E:\Code NET\IMS_System\IMS_System\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razo
 E:\Code NET\IMS_System\IMS_System\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 E:\Code NET\IMS_System\IMS_System\bin\Debug\net6.0\NToastNotify.dll
 E:\Code NET\IMS_System\IMS_System\obj\Debug\net6.0\IMS_System.MvcApplicationPartsAssemblyInfo.cs
+E:\Code NET\IMS_System\IMS_System\bin\Debug\net6.0\ClosedXML.dll
+E:\Code NET\IMS_System\IMS_System\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+E:\Code NET\IMS_System\IMS_System\bin\Debug\net6.0\ExcelNumberFormat.dll
+E:\Code NET\IMS_System\IMS_System\bin\Debug\net6.0\Irony.dll
+E:\Code NET\IMS_System\IMS_System\bin\Debug\net6.0\SixLabors.Fonts.dll
+E:\Code NET\IMS_System\IMS_System\bin\Debug\net6.0\System.IO.Packaging.dll
+E:\Code NET\IMS_System\IMS_System\bin\Debug\net6.0\XLParser.dll
+E:\Code NET\IMS_System\IMS_System\obj\Debug\net6.0\scopedcss\Views\Shared\StudentLayout.cshtml.rz.scp.css

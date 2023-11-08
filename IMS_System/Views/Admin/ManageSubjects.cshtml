@@ -1,0 +1,65 @@
+﻿@model IEnumerable<IMS_System.Models.Entities.Subject>
+
+@{
+    ViewData["Title"] = "Subject Management";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-12 mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="header-title">Subject Management</h4>
+            <div class="col-sm-7">
+                <a asp-action="CreateSubject" class="btn btn-secondary"><i class="material-icons">&#xE147;</i> <span>Add New Subject</span></a>
+            </div>
+            <div class="data-tables datatable-dark">
+                <table id="dataTable3" class="text-center">
+                    <thead class="text-capitalize">
+                        <tr>
+                            <th>Subject Name</th>
+                            <th>Subject Code</th>
+                            <th>Description</th>
+                            <th>Class</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var subject in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => subject.SubjectName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => subject.SubjectCode)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => subject.Description)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => subject.Class.ClassName)  
+                                </td>
+                                <td>
+                                    <a asp-action="DetailsSubject" asp-route-id="@subject.SubjectId" class="view" title="View Details" data-toggle="tooltip"><i class="material-icons">&#xE850;</i>View</a>
+                                    <a asp-action="EditSubject" asp-route-id="@subject.SubjectId" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
+                                   @*   <a asp-action="DeleteSubject" asp-route-id="@subject.SubjectId" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i>Delete</a>  *@
+                                    @if (subject.Status != null && subject.Status.StatusName == "Active")
+                                    {
+                                        <form asp-action="ChangeSubjectStatus" asp-route-id="@subject.SubjectId" asp-route-statusId="4" method="post">
+                                            <button type="submit" class="btn btn-warning">Deactivate</button>
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <form asp-action="ChangeSubjectStatus" asp-route-id="@subject.SubjectId" asp-route-statusId="3" method="post">
+                                            <button type="submit" class="btn btn-success">Activate</button>
+                                        </form>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

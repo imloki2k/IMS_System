@@ -103,6 +103,11 @@ namespace IMS_System.Controllers
                             ClaimsIdentity identity = new ClaimsIdentity(claims, "login");
                             ClaimsPrincipal principal = new ClaimsPrincipal(identity);
                             await HttpContext.SignInAsync(principal);
+                            if(user.RoleId == 4)
+                            {
+                                return RedirectToAction("Index", "Projects");
+                            }
+
                             return RedirectToAction("Index", "Home");
                         }
                         else

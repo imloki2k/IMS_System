@@ -629,68 +629,484 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\favicon.ico",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\favicon.ico"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\landingpage\\css\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\bg-masthead.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\bg-masthead.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\css\\style.css",
+      "PackagePath": "staticwebassets\\landingpage\\css\\style.css"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\fullsize\\1.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\fullsize\\1.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\about.png",
+      "PackagePath": "staticwebassets\\landingpage\\img\\about.png"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\fullsize\\2.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\fullsize\\2.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\bg-bottom.png",
+      "PackagePath": "staticwebassets\\landingpage\\img\\bg-bottom.png"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\fullsize\\3.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\fullsize\\3.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\bg-circle.png",
+      "PackagePath": "staticwebassets\\landingpage\\img\\bg-circle.png"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\fullsize\\4.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\fullsize\\4.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\bg-top.png",
+      "PackagePath": "staticwebassets\\landingpage\\img\\bg-top.png"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\fullsize\\5.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\fullsize\\5.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\bg-triangle.png",
+      "PackagePath": "staticwebassets\\landingpage\\img\\bg-triangle.png"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\fullsize\\6.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\fullsize\\6.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\screenshot-1.png",
+      "PackagePath": "staticwebassets\\landingpage\\img\\screenshot-1.png"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\thumbnails\\1.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\thumbnails\\1.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\screenshot-2.png",
+      "PackagePath": "staticwebassets\\landingpage\\img\\screenshot-2.png"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\thumbnails\\2.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\thumbnails\\2.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\screenshot-3.png",
+      "PackagePath": "staticwebassets\\landingpage\\img\\screenshot-3.png"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\thumbnails\\3.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\thumbnails\\3.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\screenshot-4.png",
+      "PackagePath": "staticwebassets\\landingpage\\img\\screenshot-4.png"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\thumbnails\\4.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\thumbnails\\4.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\screenshot-5.png",
+      "PackagePath": "staticwebassets\\landingpage\\img\\screenshot-5.png"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\thumbnails\\5.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\thumbnails\\5.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\screenshot-frame.png",
+      "PackagePath": "staticwebassets\\landingpage\\img\\screenshot-frame.png"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\assets\\img\\portfolio\\thumbnails\\6.jpg",
-      "PackagePath": "staticwebassets\\landingpage\\assets\\img\\portfolio\\thumbnails\\6.jpg"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\landingpage\\img\\testimonial-1.jpg"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\css\\styles.css",
-      "PackagePath": "staticwebassets\\landingpage\\css\\styles.css"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\landingpage\\img\\testimonial-2.jpg"
     },
     {
-      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\js\\scripts.js",
-      "PackagePath": "staticwebassets\\landingpage\\js\\scripts.js"
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\testimonial-3.jpg",
+      "PackagePath": "staticwebassets\\landingpage\\img\\testimonial-3.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\img\\testimonial-4.jpg",
+      "PackagePath": "staticwebassets\\landingpage\\img\\testimonial-4.jpg"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\js\\main.js",
+      "PackagePath": "staticwebassets\\landingpage\\js\\main.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\animate\\animate.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\animate\\animate.min.css",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\animate\\animate.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\counterup\\counterup.min.js",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\counterup\\counterup.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\owlcarousel"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\wow\\wow.js",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\wow\\wow.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\lib\\wow\\wow.min.js",
+      "PackagePath": "staticwebassets\\landingpage\\lib\\wow\\wow.min.js"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_accordion.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_accordion.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_containers.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_containers.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_helpers.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_helpers.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_offcanvas.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\forms\\_labels.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\forms\\_validation.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\helpers\\_position.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_container.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\utilities\\_api.scss"
+    },
+    {
+      "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\landingpage\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\landingpage\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
       "Id": "E:\\Code NET\\IMS_System\\IMS_System\\wwwroot\\lib\\bootstrap\\LICENSE",

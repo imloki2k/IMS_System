@@ -73,7 +73,7 @@ namespace IMS_System.Controllers
                 _context.Add(milestone);
                 await _context.SaveChangesAsync();
                 _toastNotification.AddSuccessToastMessage("Create successful!");
-                return RedirectToAction("Details", "Classes");
+                 return RedirectToAction(nameof(Index));
             }
             ViewData["AssignmentId"] = new SelectList(_context.Assignments, "AssignmentId", "AssingmentName", milestone.AssignmentId);
             ViewData["ClassId"] = new SelectList(_context.Classes, "ClassId", "ClassName", milestone.ClassId);
@@ -82,6 +82,31 @@ namespace IMS_System.Controllers
             ViewData["SubjectId"] = new SelectList(_context.Subjects, "SubjectId", "SubjectName", milestone.SubjectId);
             return View(milestone);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddMilestone([FromBody] Milestone model)
+        {
+            if (ModelState.IsValid)
+            {
+                Milestone milestone = new Milestone
+                {
+                    ProjectId = model.ProjectId,
+                    MilestoneDescription = model.MilestoneDescription,
+                    Milestone1 = model.Milestone1
+                    // Populate other fields as necessary
+                };
+
+                _context.Add(milestone);
+                await _context.SaveChangesAsync();
+
+                // Assuming you want to return to the project's edit page
+                return Json(new { redirectUrl = Url.Action("Edit", "Projects", new { id = model.ProjectId }) });
+            }
+
+            return Json(new { error = "Invalid milestone data" });
+        }
+
 
         // GET: Milestones/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -135,7 +160,7 @@ namespace IMS_System.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction("Details", "Classes");
+                return RedirectToAction(nameof(Index));
             }
             ViewData["AssignmentId"] = new SelectList(_context.Assignments, "AssignmentId", "AssingmentName", milestone.AssignmentId);
             ViewData["ClassId"] = new SelectList(_context.Classes, "ClassId", "ClassName", milestone.ClassId);
@@ -185,7 +210,7 @@ namespace IMS_System.Controllers
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction("Details", "Classes");
+            return RedirectToAction(nameof(Index));
         }
 
         private bool MilestoneExists(int id)

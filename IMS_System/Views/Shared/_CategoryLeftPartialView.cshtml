@@ -25,10 +25,23 @@
                             <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>Manager</span></a>
                             <ul class="collapse">
                                 <li><a asp-controller="Classes" asp-action="Index">Classes</a></li>
+                                <li><a asp-controller="Admin" asp-action="ManageSubjects">Subject Management</a></li>
+                            </ul>
+                        </li>
+                    }
+
+                    @if (User.IsInRole("ADMIN"))
+                    {
+                        <li>
+                            <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>Manager</span></a>
+                            <ul class="collapse">
+                                <li><a asp-controller="Admin" asp-action="ManageSubjects">Subject Management</a></li>
+                                <li><a asp-controller="Admin" asp-action="Index">User Management</a></li>
                                 @* <li><a href="index2.html">Subject</a></li> *@
                             </ul>
                         </li>
                     }
+
                 </ul>
             </nav>
         </div>

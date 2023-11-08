@@ -120,7 +120,7 @@ public partial class ImsSystemContext : DbContext
         modelBuilder.Entity<Issue>(entity =>
         {
             entity.Property(e => e.IssueId)
-                .ValueGeneratedNever()
+                
                 .HasColumnName("issue_id");
             entity.Property(e => e.CreatedDate)
                 .HasColumnType("datetime")
@@ -201,7 +201,7 @@ public partial class ImsSystemContext : DbContext
             entity.ToTable("Project_member");
 
             entity.Property(e => e.Id)
-                .ValueGeneratedNever()
+               
                 .HasColumnName("id");
             entity.Property(e => e.IsLeader).HasColumnName("is_leader");
             entity.Property(e => e.ProjectId).HasColumnName("project_id");

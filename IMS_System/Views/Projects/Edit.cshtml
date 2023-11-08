@@ -1,0 +1,366 @@
+﻿@model IMS_System.Models.Entities.Project
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/StudentLayout.cshtml";
+       bool isUserLeader = ViewData["IsUserLeader"] as bool? ?? false;
+}
+
+<h1>Edit</h1>
+
+<h4>Project</h4>
+<hr />
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ProjectId" />
+            <div class="form-group">
+                <label asp-for="EnglishName" class="control-label"></label>
+                <input asp-for="EnglishName" class="form-control" />
+                <span asp-validation-for="EnglishName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VietnameseName" class="control-label"></label>
+                <input asp-for="VietnameseName" class="form-control" />
+                <span asp-validation-for="VietnameseName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatusId" class="control-label"></label>
+                <select asp-for="StatusId" class="form-control" asp-items="ViewBag.StatusId"></select>
+                <span asp-validation-for="StatusId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group ">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            
+                @if (isUserLeader)
+                  {
+                       <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                 </div>
+                }
+           
+        </form>
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Project Members</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Member ID</th>
+                            <th>User ID</th>
+                            <th>Email</th>
+                            <th>Is Leader</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var member in Model.ProjectMembers)
+                        {
+                            <tr>
+                                <td>@member.Id</td>
+                                <td>@member.UserId</td>
+                                <td>@member.User?.Email</td> <!-- Assuming User entity has an Email property -->
+                                <td>@(member.IsLeader == 1 ? "Yes" : "No")</td>
+                                 <td>
+                                @if (isUserLeader)
+                                    {
+                                       if (member.IsLeader == 1)
+                                            {
+                                             <!-- If the member is the leader, disable the buttons -->
+                                             <button class="btn btn-secondary btn-sm" disabled>Kick</button>
+                                            <button class="btn btn-secondary btn-sm" disabled>Set Leader</button>
+                                                }
+                                         else
+                                            {
+                                          <!-- If the member is not the leader, show enabled buttons -->
+                                        <button class="btn btn-danger btn-sm" onclick="kickMember(@member.ProjectId, @member.UserId)">Kick</button>
+                                        <button class="btn btn-primary btn-sm" onclick="setAsLeader(@member.ProjectId, @member.UserId)">Set Leader</button>
+                                            }
+                                            }
+                               </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <div class="form-group">
+                    <!-- Button trigger modal -->
+
+               @if (isUserLeader)
+{
+    <!-- Button trigger modal for adding project member -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addMemberModal">
+        Add Member
+    </button>
+}
+                </div>
+            </div>
+        </div
+
+        <div class="row">
+            <h2>Milestones</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Milestone ID</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var milestone in Model.Milestones)
+                    {
+                        <tr>
+                            <td>@milestone.MilestoneId</td>
+                            <td>@milestone.MilestoneDescription</td>
+                            <td>@milestone.Milestone1?.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>
+                                <!-- Add any action links here - for example: Edit, Remove -->
+                         @*       <a asp-action="EditMilestone" asp-route-id="@milestone.MilestoneId">Edit</a> |              
+                                <a asp-action="DeleteMilestone" asp-route-id="@milestone.MilestoneId">Delete</a>           *@  
+                                
+                                <a asp-controller="ProjectIssues" asp-action="Index" asp-route-projectId="@milestone.ProjectId" asp-route-milestoneId="@milestone.MilestoneId">List Issues</a>
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="form-group">
+                <!-- Button trigger modal for adding milestone -->
+             
+
+                @if (isUserLeader)
+{
+    <!-- Button trigger modal for adding project member -->
+   <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#milestoneModal">
+                    Add Milestone
+                </button>
+}
+
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="col-md-8">
+      
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal" id="addMemberModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Add Project Member</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <input type="email" id="memberEmail" class="form-control" placeholder="Enter email">
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" onclick="addMember()">Add</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="milestoneModal" tabindex="-1" role="dialog" aria-labelledby="milestoneModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="milestoneModalLabel">Add Milestone to Project</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="milestoneDescription" class="form-control" placeholder="Enter milestone description">
+                <input type="datetime-local" id="milestone1" class="form-control" placeholder="Enter milestone time">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="addMilestone(@Model.ProjectId)">Add Milestone</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+     @*Add project member*@
+     <script>
+function addMember() {
+    var email = document.getElementById('memberEmail').value;
+    var projectId = @Model.ProjectId; // Assuming you have the ProjectId in your model
+
+    // Perform the AJAX request
+    $.ajax({
+        url: '@Url.Action("AddProjectMember", "ProjectMembers")',
+        type: 'POST',
+        data: {
+            email: email,
+            projectId: projectId
+        },
+        success: function(result) {
+            if (result.success) {
+                // Close the modal
+                $('#addMemberModal').modal('hide');
+                // Reload the page to update the data
+                location.reload();
+            } else {
+                alert(result.message);
+            }
+        }
+    });
+}
+</script>
+    @*Add milestone*@
+   <script>
+    function addMilestone(projectId) {
+        var description = document.getElementById('milestoneDescription').value;
+        var time = document.getElementById('milestone1').value;
+        if (description && time) {
+            // Prepare CSRF token to include in the AJAX POST header
+            var token = $('input[name="__RequestVerificationToken"]').val();
+
+            // AJAX call to server to add milestone
+            $.ajax({
+                url: '@Url.Action("AddMilestone", "Milestones")', 
+                type: 'POST',
+                contentType: 'application/json', // Set the content type to JSON
+                data: JSON.stringify({ // Stringify the payload
+                    MilestoneDescription: description,
+                    Milestone1: time,
+                    ProjectId: projectId
+                }),
+                headers: {
+                    "RequestVerificationToken": token // Add the CSRF token to the request header
+                },
+                success: function (response) {
+                    // If the response includes a URL, redirect to it
+                    if (response.redirectUrl) {
+                        window.location.href = response.redirectUrl;
+                    } else {
+                        // Otherwise, log the response and close the modal
+                        console.log('Milestone added', response);
+                        $('#milestoneModal').modal('hide');
+                    }
+                },
+                error: function (error) {
+                    // Handle error
+                    console.error('Error adding milestone', error);
+                }
+            });
+        } else {
+            alert('Please enter all milestone details.');
+        }
+    }
+
+    // Clears the milestone inputs when the modal is closed
+    $('#milestoneModal').on('hidden.bs.modal', function () {
+        $(this).find('input[type="text"], input[type="datetime-local"]').val('');
+    });
+</script>
+
+@*kick member*@
+<script>
+      function kickMember(projectId, userId) {
+            // Confirmation before kicking the member
+            if (!confirm('Are you sure you want to kick this member?')) {
+                return;
+            }
+
+            // Prepare CSRF token to include in the AJAX POST header
+            var token = $('input[name="__RequestVerificationToken"]').val();
+
+            // AJAX call to server to kick member
+            $.ajax({
+                url: '@Url.Action("KickProjectMember", "ProjectMembers")',
+                type: 'POST',
+                data: {
+                    projectId: projectId,
+                    userId: userId,
+                    __RequestVerificationToken: token // Include the CSRF token in the data
+                },
+                success: function (response) {
+                    console.log('Member kicked', response);
+                    // Reload the page to reflect the changes
+                    location.reload();
+                },
+                error: function (error) {
+                    console.error('Error kicking member', error);
+                    // You may want to display an error message to the user
+                }
+            });
+        }
+</script>
+
+<script>
+function setAsLeader(projectId, userId) {
+    if (!confirm('Are you sure you want to set this member as the leader?')) {
+        return;
+    }
+
+    var token = $('input[name="__RequestVerificationToken"]').val();
+
+    $.ajax({
+        url: '@Url.Action("SetAsLeader", "ProjectMembers")',
+        type: 'POST',
+        data: {
+            projectId: projectId,
+            userId: userId,
+            __RequestVerificationToken: token
+        },
+        success: function (response) {
+            if (response.success) {
+                console.log('Leader set successfully', response);
+                location.reload();
+            } else {
+                console.error('Failed to set leader', response);
+            }
+        },
+        error: function (error) {
+            console.error('Error setting leader', error);
+        }
+    });
+}
+</script>
+
+
+
+Here are the key changes made:
+
+contentType: 'application/json' - This
+
+
+}
+
+}

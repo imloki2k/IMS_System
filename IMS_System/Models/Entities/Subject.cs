@@ -21,4 +21,5 @@ public partial class Subject
     public virtual ICollection<Milestone> Milestones { get; set; } = new List<Milestone>();
 
     public virtual Class? Class { get; set; }
+    public virtual Status? Status { get; set; }
 }

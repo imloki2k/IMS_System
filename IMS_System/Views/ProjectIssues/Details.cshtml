@@ -1,0 +1,49 @@
+﻿@model IMS_System.Models.Entities.Issue
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/StudentLayout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Issue</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IssueName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IssueName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Project.EnglishName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Project.EnglishName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IssueDescription)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IssueDescription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Status.StatusName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Status.StatusName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IssueId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
