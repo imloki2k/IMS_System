@@ -19,13 +19,13 @@
                             <li><a asp-controller="Accounts" asp-action="Dashboard">Profile</a></li>
                         </ul>
                     </li>
-                    @if (User.IsInRole("MANAGER"))
+                    @if (User.IsInRole("MANAGER") || User.IsInRole("TEACHER"))
                     {
                         <li>
                             <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>Manager</span></a>
                             <ul class="collapse">
                                 <li><a asp-controller="Classes" asp-action="Index">Classes</a></li>
-                                <li><a href="index2.html">Subject</a></li>
+                                @* <li><a href="index2.html">Subject</a></li> *@
                             </ul>
                         </li>
                     }

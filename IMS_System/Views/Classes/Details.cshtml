@@ -113,7 +113,10 @@
                     </div>
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <div class="col-sm-12" style="text-align: right; margin: 10px">
-                            <a asp-controller="Milestones" asp-action="Create" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Add New Milestone</span></a>
+                            @if (User.IsInRole("MANAGER"))
+                            {
+                                <a asp-controller="Milestones" asp-action="Create" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Add New Milestone</span></a>
+                            }
                         </div>
                         <div class="data-tables">
                             <table id="dataTable" class="text-center">
@@ -157,8 +160,11 @@
                                                 @Html.DisplayFor(modelItem => item.Issue.IssueName)
                                             </td>
                                             <td>
-                                                <a asp-controller="Milestones" asp-action="Edit" asp-route-id="@item.MilestoneId">Edit</a>
-                                                <a asp-controller="Milestones"  asp-action="Delete" asp-route-id="@item.MilestoneId">Delete</a>
+                                                @if (User.IsInRole("MANAGER"))
+                                                {
+                                                    <a asp-controller="Milestones" asp-action="Edit" asp-route-id="@item.MilestoneId">Edit</a>
+                                                    <a asp-controller="Milestones"  asp-action="Delete" asp-route-id="@item.MilestoneId">Delete</a>
+                                                }
                                             </td>
                                         </tr>
                                     }

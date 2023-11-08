@@ -13,7 +13,7 @@ using IMS_System.ModelViews;
 
 namespace IMS_System.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "MANAGER,TEACHER")]
     public class ClassesController : Controller
     {
         private readonly ImsSystemContext _context;
